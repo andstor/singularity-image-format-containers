@@ -26,7 +26,7 @@ jobs:
         id: convert-container
         uses: andstor/docker2apptainer@main
         with:
-          docker-image: ghcr.io/huggingface/text-generation-inference:2.4.0
+          docker-image: docker://ghcr.io/huggingface/text-generation-inference:2.4.0
           save-path: text-generation-inference.sif
       
       - name: Login and Deploy Container
